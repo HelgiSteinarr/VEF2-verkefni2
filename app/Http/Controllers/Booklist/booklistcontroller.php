@@ -2,17 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\BookList;
+
 
 class BookListController extends Controller {
 
     function home()
     {
-        return view("home");
+		$books = BookList::bookInfoOfAll();
+        return view("home", [ "books" => $books ]);
     }
 
     function aboutBook($bookId)
     {
-        return view("bookInfo");
+		$bookInfo = BookList::bookInfo($bookId);
+        return view("bookInfo", [ "bookInfo" => $bookInfo ]);
     }
 
 }

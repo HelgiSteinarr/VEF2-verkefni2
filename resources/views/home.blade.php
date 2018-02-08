@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="/css/app.css" />
     <title>Bókalisti</title>
 </head>
-<body>
+<body class="home">
     <h1>Bókalisti</h1>
     <ul>
-        <li><a>Bók 1</a></li>
-        <li><a>Bók 2</a></li>
+        @for ($i = 0; $i < count($books); $i++)
+			<li><a href={{ "/book/".array_keys($books)[$i] }} >{{ $books[array_keys($books)[$i]]["name"] }}</a></li>
+		@endfor
     </ul>
 </body>
 </html>

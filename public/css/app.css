@@ -1,2 +1,78 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
+
+/* all */
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 300;
+}
+
+/* home */
+.home ul {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 60px;
+    list-style: none;
+    width: 600px;
+}
+.home li {
+
+}
+.home li a {
+    display: block;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s ease-out, border-bottom-color 0.3s ease-out;
+}
+.home li a:hover {
+    color: #F44336;
+    border-bottom-color: #F44336;
+}
+
+
+/* book info */
+.bookInfo ul {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 60px;
+    list-style: none;
+    width: 600px;
+}
+.bookInfo p {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    color: #747474;
+}
+.bookInfo p.first{
+    margin-top: 60px;
+}
+.bookInfo li a {
+    display: block;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s ease-out, border-bottom-color 0.3s ease-out;
+}
+.bookInfo li a:hover {
+    color: #F44336;
+    border-bottom-color: #F44336;
+}

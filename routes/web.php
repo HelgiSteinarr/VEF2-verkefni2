@@ -12,6 +12,6 @@
 */
 
 Route::get('/', "BookListController@home");
-Route::get('/{bookId}', "BookListController@aboutBook");
+Route::get('/book/{bookId}', "BookListController@aboutBook");
 
 ?>
